@@ -507,7 +507,7 @@ const lmic_pinmap lmic_pins = {
 
 
 #### ESP32
-See [ESP32] (https://www.espressif.com/en/products/socs/esp32).
+See [ESP32](https://www.espressif.com/en/products/socs/esp32).
 ```c++
 const lmic_pinmap lmic_pins = {
     .nss = 5,                       
