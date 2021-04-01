@@ -70,7 +70,7 @@ requires C99 mode to be enabled by default.
 		2. [LoRa Nexus by Ideetron](#lora-nexus-by-ideetron)
 		3. [MCCI Catena 4450/4460](#mcci-catena-44504460)
 		4. [MCCI Catena 4551](#mcci-catena-4551)
-		5. [ESP32] (#ESP32)
+		5. [ESP32]
 6. [Example Sketches](#example-sketches)
 7. [Timing](#timing)
 8. [Downlink datarate](#downlink-datarate)
@@ -507,7 +507,7 @@ const lmic_pinmap lmic_pins = {
 
 
 #### ESP32
-	See https://www.espressif.com/en/products/socs/esp32
+See https://www.espressif.com/en/products/socs/esp32
 
 const lmic_pinmap lmic_pins = {
     .nss = 5,                       
