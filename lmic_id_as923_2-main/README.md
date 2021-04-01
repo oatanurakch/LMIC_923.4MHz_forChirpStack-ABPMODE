@@ -70,7 +70,7 @@ requires C99 mode to be enabled by default.
 		2. [LoRa Nexus by Ideetron](#lora-nexus-by-ideetron)
 		3. [MCCI Catena 4450/4460](#mcci-catena-44504460)
 		4. [MCCI Catena 4551](#mcci-catena-4551)
-		5. [ESP32]
+		5. [ESP32](#esp32)
 6. [Example Sketches](#example-sketches)
 7. [Timing](#timing)
 8. [Downlink datarate](#downlink-datarate)
@@ -413,7 +413,7 @@ If an external switch is used, you also must specify the polarity. Some modules 
 > - [LoRa Nexus by Ideetron](#lora-nexus-by-ideetron)
 > - [MCCI Catena 4450/4460](#mcci-catena-44504460)
 > - [MCCI Catena 4551](#mcci-catena-4551)
-> - ESP32
+> - [ESP32](#esp32)
 
 If you don't have the board documentation, you need to provide your own `lmic_pinmap` values. As described above, a variety of configurations are possible. To tell the LMIC library how your board is configured, a pin mapping struct
 is used in the sketch file.
@@ -507,15 +507,15 @@ const lmic_pinmap lmic_pins = {
 
 
 #### ESP32
-See https://www.espressif.com/en/products/socs/esp32
-
+See [ESP32] (https://www.espressif.com/en/products/socs/esp32).
+```c++
 const lmic_pinmap lmic_pins = {
     .nss = 5,                       
     .rxtx = LMIC_UNUSED_PIN,
     .rst = 22,                      
     .dio = {26, 25, 27},                          
 };
-
+```
 
 ## Example Sketches
 
