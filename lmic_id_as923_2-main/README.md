@@ -412,6 +412,7 @@ If an external switch is used, you also must specify the polarity. Some modules 
 > - [LoRa Nexus by Ideetron](#lora-nexus-by-ideetron)
 > - [MCCI Catena 4450/4460](#mcci-catena-44504460)
 > - [MCCI Catena 4551](#mcci-catena-4551)
+> - ESP32
 
 If you don't have the board documentation, you need to provide your own `lmic_pinmap` values. As described above, a variety of configurations are possible. To tell the LMIC library how your board is configured, a pin mapping struct
 is used in the sketch file.
@@ -502,6 +503,16 @@ const lmic_pinmap lmic_pins = {
     .spi_freq = 8000000
 };
 ```
+
+
+#### ESP32
+const lmic_pinmap lmic_pins = {
+    .nss = 5,                       
+    .rxtx = LMIC_UNUSED_PIN,
+    .rst = 22,                      
+    .dio = {26, 25, 27},                          
+};
+
 
 ## Example Sketches
 
